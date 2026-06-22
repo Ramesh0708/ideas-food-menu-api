@@ -1,0 +1,45 @@
+body {
+    width: 400px;
+    padding: 15px;
+    font-family: Segoe UI, Arial, sans-serif;
+    background: #f5f9fc;
+}
+
+.header {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0057b8;
+    margin-bottom: 15px;
+}
+
+#date {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.meal {
+    background: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+.meal h3 {
+    margin: 0;
+    color: #0078d4;
+}
+
+.meal p {
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+.footer {
+    margin-top: 15px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+}
