@@ -1,5 +1,5 @@
 const MENU_URL =
-"https://ramesh0708.github.io/ideas-food-menu-api/";
+"https://ramesh0708.github.io/ideas-food-menu-api/menu.json";
 
 fetch(MENU_URL)
   .then(response => response.json())
@@ -9,21 +9,23 @@ fetch(MENU_URL)
       "📅 " + data.date;
 
     document.getElementById("breakfast").innerText =
-      data.breakfast;
+      data.breakfast || "Not Updated";
 
     document.getElementById("lunch").innerText =
-      data.lunch;
+      data.lunch || "Not Updated";
 
     document.getElementById("snacks").innerText =
-      data.snacks;
+      data.snacks || "Not Updated";
 
     document.getElementById("dinner").innerText =
-      data.dinner;
+      data.dinner || "Not Updated";
 
     document.getElementById("midnight").innerText =
-      data.midnight;
-
+      data.midnight || "Not Updated";
   })
   .catch(error => {
-      console.error(error);
+    console.error(error);
+
+    document.getElementById("date").innerText =
+      "⚠️ Unable to load menu";
   });
