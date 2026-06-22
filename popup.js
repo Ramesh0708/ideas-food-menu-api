@@ -1,5 +1,5 @@
 const MENU_URL =
-"https://ramesh0708.github.io/ideas-food-menu-api/menu.json";
+"https://ramesh0708.github.io/ideas-food-menu-api/menu.json?t=" + Date.now();
 
 fetch(MENU_URL)
   .then(response => response.json())
