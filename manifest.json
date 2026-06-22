@@ -2,11 +2,11 @@
   "manifest_version": 3,
   "name": "IDeaS Food Menu",
   "version": "1.0",
-  "description": "Daily cafeteria menu notifications for IDeaS associates",
+  "permissions": [],
+  "host_permissions": [
+    "https://ramesh0708.github.io/*"
+  ],
   "action": {
     "default_popup": "popup.html"
-  },
-  "permissions": [
-    "storage"
-  ]
+  }
 }
